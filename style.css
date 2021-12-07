@@ -1,0 +1,66 @@
+.walk-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(#74c0e6, #65e4e4);
+}
+.man-image {
+    position: absolute;
+    height: 250px;
+    width: 260px;
+    background: url(img/girl.png) 0px 0px;
+    animation: walk 0.3s steps(5) infinite alternate;
+    left: 0;
+    bottom: 170px;
+    z-index: 2;
+    
+}
+@keyframes walk {
+    100% {
+        background-position: -100%;
+    }
+}
+.road-image {
+    position: absolute;
+    height: 700px;
+    width: 2134px;
+    background: url(img/road789.png);
+    left: 0;
+    bottom: -10px;
+    z-index: 1;
+    animation: road 1400s infinite backwards linear;
+}
+@keyframes road {
+    0% {
+        background-position: 1000000px;
+    }
+
+    50% {
+        background-position: 500000px;
+    }
+
+    100% {
+        background-position: 0;
+    }
+}
+.cloud-image {
+    position: absolute;
+    height: 508px;
+    width: 2500px;
+    background: url(img/cloudsssa.png);
+    right: 0px;
+    top: 0;
+    animation: cloud 3500s linear infinite;
+}
+@keyframes cloud {
+    0% {
+        background-position: 1000000px;
+    }
+    100% {
+        background-position: 0;
+    }
+}
+
+body {
+    margin: 0;
+}
